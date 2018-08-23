@@ -1,6 +1,15 @@
 {
     "name": "silviolleite/laravelpwa",
     "description": "Looks like an app, feels like an app, but NOT an app.",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "php",
+        "phpspreadsheet",
+        "phpexcel",
+        "pwa",
+        "progressive web apps"
+    ],
     "authors": [
         {
             "name": "Silvio Luis Leite",
@@ -10,6 +19,13 @@
     "autoload": {
         "psr-4": {
             "LaravelPWA\\": ""
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelPWA\\Providers\\LaravelPWAServiceProvider"
+            ]
         }
     }
 }
