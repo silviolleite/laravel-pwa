@@ -1,0 +1,15 @@
+{
+    "name": "LaravelPWA",
+    "alias": "laravelpwa",
+    "description": "Looks like an app, feels like an app, but NOT an app.",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "LaravelPWA\\Providers\\LaravelPWAServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}
