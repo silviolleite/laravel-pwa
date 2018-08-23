@@ -20,7 +20,7 @@ Add the following to your `composer.json` file :
 
 ```json
 "require": {
-    "silviolleite/laravelpwa": "dev-master",
+    "silviolleite/laravelpwa": "^0.1.1",
 },
 ```
 
