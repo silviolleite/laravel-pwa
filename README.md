@@ -49,6 +49,7 @@ Configure your app name, description, and icons in `config/laravelpwa.php`.
         'background_color' => '#ffffff',
         'theme_color' => '#000000',
         'display' => 'standalone',
+        'orientation' => 'any',
         'icons' => [
             '72x72' => '/images/icons/icon-72x72.png',
             '96x96' => '/images/icons/icon-96x96.png',
