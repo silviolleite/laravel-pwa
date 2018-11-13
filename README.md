@@ -21,7 +21,7 @@ Add the following to your `composer.json` file :
 
 ```json
 "require": {
-    "silviolleite/laravelpwa": "^1.0.0",
+    "silviolleite/laravelpwa": "^1.0.1",
 },
 ```
 
