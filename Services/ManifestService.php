@@ -20,7 +20,8 @@ class ManifestService
             'display' => config('laravelpwa.manifest.display'),
             'theme_color' => config('laravelpwa.manifest.theme_color'),
             'background_color' => config('laravelpwa.manifest.background_color'),
-            'orientation' =>  config('laravelpwa.manifest.orientation')
+            'orientation' =>  config('laravelpwa.manifest.orientation'),
+            'splash' =>  config('laravelpwa.manifest.splash')
         ];
 
         foreach (config('laravelpwa.manifest.icons') as $size => $file) {
