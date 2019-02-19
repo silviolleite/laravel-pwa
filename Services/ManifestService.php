@@ -32,6 +32,10 @@ class ManifestService
                 'sizes' => $size
             ];
         }
+
+        foreach (config('laravelpwa.manifest.custom') as $tag => $value) {
+             $basicManifest[$tag] = $value;
+        }
         return $basicManifest;
     }
 

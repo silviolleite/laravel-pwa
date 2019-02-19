@@ -2,7 +2,6 @@
 
 [![Laravel 5.x](https://img.shields.io/badge/Laravel-5.x-orange.svg)](http://laravel.com)
 [![Latest Stable Version](https://poser.pugx.org/silviolleite/laravelpwa/v/stable)](https://packagist.org/packages/silviolleite/laravelpwa)
-[![Latest Unstable Version](https://poser.pugx.org/silviolleite/laravelpwa/v/unstable.svg)](https://packagist.org/packages/silviolleite/laravelpwa)
 [![Total Downloads](https://poser.pugx.org/silviolleite/laravelpwa/downloads.png)](https://packagist.org/packages/silviolleite/laravelpwa)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://packagist.org/packages//silviolleite/laravelpwa)
 
@@ -71,9 +70,20 @@ Configure your app name, description, icons and splashes  in `config/laravelpwa.
             '1668x2224' => '/images/icons/splash-1668x2224.png',
             '1668x2388' => '/images/icons/splash-1668x2388.png',
             '2048x2732' => '/images/icons/splash-2048x2732.png',
-        ]
+        ],
+        'custom' => []
     ]
 ```
+Obs: In the `custom` tag you can insert personalized tags to `manifest.json` like this e.g:
+```php
+...
+'custom' => [
+    'tag_name' => 'tag_value',
+    'tag_name2' => 'tag_value2',
+    ...
+]
+...
+```   
 
 Include within your `<head>` the blade directive `@laravelPWA` this should include the appropriate meta tags, the link to `manifest.json` and the serviceworker script.
 
