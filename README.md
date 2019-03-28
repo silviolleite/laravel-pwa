@@ -85,7 +85,24 @@ Obs: In the `custom` tag you can insert personalized tags to `manifest.json` lik
 ...
 ```   
 
-Include within your `<head>` the blade directive `@laravelPWA` this should include the appropriate meta tags, the link to `manifest.json` and the serviceworker script.
+Include within your `<head>` the blade directive `@laravelPWA`.
+```html
+<html>
+<head>
+    <title>My Title</title>
+    ...
+    @laravelPWA
+</head>
+<body>
+    ...
+    My content
+    ...
+</body>
+</html>
+```
+
+
+This should include the appropriate meta tags, the link to `manifest.json` and the serviceworker script.
 
 how this example:
 ```html
