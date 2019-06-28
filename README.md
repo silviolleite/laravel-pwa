@@ -9,6 +9,8 @@ This Laravel pakage turns your project into a [progressive web app](https://deve
 
 Launching the app from your home screen will display your app.  As such, it's critical that your application provides all navigation within the HTML (no reliance on the browser back or forward button).
 
+See too the [Laravel PWA Demo](https://github.com/silviolleite/laravel-pwa-demo)
+
 
 Requirements
 =====
