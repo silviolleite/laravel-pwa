@@ -61,7 +61,7 @@ class LaravelPWAServiceProvider extends ServiceProvider
      */
     public function registerViews()
     {
-        $viewPath = base_path('resources/views/modules/laravelpwa');
+        $viewPath = base_path('resources/views/vendor/laravelpwa');
 
         $sourcePath = __DIR__.'/../resources/views';
 
@@ -70,7 +70,7 @@ class LaravelPWAServiceProvider extends ServiceProvider
         ], 'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
-            return $path . '/modules/laravelpwa';
+            return $path . '/vendor/laravelpwa';
         }, \Config::get('view.paths')), [$sourcePath]), 'laravelpwa');
     }
 
