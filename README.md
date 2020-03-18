@@ -1,4 +1,4 @@
-# Laravel (PWA) Progressive Web Aplication 
+# Laravel (PWA) Progressive Web Aplication
 
 [![Laravel 5.x](https://img.shields.io/badge/Laravel-5.x-orange.svg)](http://laravel.com)
 [![Latest Stable Version](https://poser.pugx.org/silviolleite/laravelpwa/v/stable)](https://packagist.org/packages/silviolleite/laravelpwa)
@@ -52,14 +52,38 @@ Configure your app name, description, icons and splashes  in `config/laravelpwa.
         'display' => 'standalone',
         'orientation' => 'any',
         'icons' => [
-            '72x72' => '/images/icons/icon-72x72.png',
-            '96x96' => '/images/icons/icon-96x96.png',
-            '128x128' => '/images/icons/icon-128x128.png',
-            '144x144' => '/images/icons/icon-144x144.png',
-            '152x152' => '/images/icons/icon-152x152.png',
-            '192x192' => '/images/icons/icon-192x192.png',
-            '384x384' => '/images/icons/icon-384x384.png',
-            '512x512' => '/images/icons/icon-512x512.png',
+            '72x72' => [
+                'path' => '/images/icons/icon-72x72.png',
+                'purpose' => 'any'
+            ],
+            '96x96' => [
+                'path' => '/images/icons/icon-96x96.png',
+                'purpose' => 'any'
+            ],
+            '128x128' => [
+                'path' => '/images/icons/icon-128x128.png',
+                'purpose' => 'any'
+            ],
+            '144x144' => [
+                'path' => '/images/icons/icon-144x144.png',
+                'purpose' => 'any'
+            ],
+            '152x152' => [
+                'path' => '/images/icons/icon-152x152.png',
+                'purpose' => 'any'
+            ],
+            '192x192' => [
+                'path' => '/images/icons/icon-192x192.png',
+                'purpose' => 'any'
+            ],
+            '384x384' => [
+                'path' => '/images/icons/icon-384x384.png',
+                'purpose' => 'any'
+            ],
+            '512x512' => [
+                'path' => '/images/icons/icon-512x512.png',
+                'purpose' => 'any'
+            ],
         ],
         'splash' => [
             '640x1136' => '/images/icons/splash-640x1136.png',
@@ -143,7 +167,7 @@ how this example:
     // Initialize the service worker
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/serviceworker.js', {
-            scope: '.' 
+            scope: '.'
         }).then(function (registration) {
             // Registration was successful
             console.log('Laravel PWA: ServiceWorker registration successful with scope: ', registration.scope);
@@ -248,7 +272,7 @@ By default, the offline view is implemented in `resources/views/modules/laravelp
 @endsection
 ```
 To customize update this file.
- 
+
 ## Contributing
 
 Contributing is easy! Just fork the repo, make your changes then send a pull request on GitHub. If your PR is languishing in the queue and nothing seems to be happening, then send Silvio an [email](mailto:silviolleite@gmail.com).
