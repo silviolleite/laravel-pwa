@@ -25,11 +25,12 @@ class ManifestService
         ];
 
         foreach (config('laravelpwa.manifest.icons') as $size => $file) {
-            $fileInfo = pathinfo($file);
+            $fileInfo = pathinfo($file['path']);
             $basicManifest['icons'][] = [
-                'src' => $file,
+                'src' => $file['path'],
                 'type' => 'image/' . $fileInfo['extension'],
-                'sizes' => $size
+                'sizes' => $size,
+                'purpose' => $file['purpose']
             ];
         }
 
