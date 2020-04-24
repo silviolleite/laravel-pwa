@@ -237,7 +237,7 @@ To customize service worker functionality, update the `public_path/serviceworker
 
 The offline view
 =====
-By default, the offline view is implemented in `resources/views/modules/laravelpwa/offline.blade.php`
+By default, the offline view is implemented in `resources/views/vendor/laravelpwa/offline.blade.php`
 
 ```html
 @extends('layouts.app')
