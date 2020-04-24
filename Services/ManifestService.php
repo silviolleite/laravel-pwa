@@ -21,6 +21,7 @@ class ManifestService
             'theme_color' => config('laravelpwa.manifest.theme_color'),
             'background_color' => config('laravelpwa.manifest.background_color'),
             'orientation' =>  config('laravelpwa.manifest.orientation'),
+            'status_bar' =>  config('laravelpwa.manifest.status_bar'),
             'splash' =>  config('laravelpwa.manifest.splash')
         ];
 

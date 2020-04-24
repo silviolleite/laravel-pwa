@@ -51,6 +51,7 @@ Configure your app name, description, icons and splashes  in `config/laravelpwa.
         'theme_color' => '#000000',
         'display' => 'standalone',
         'orientation' => 'any',
+        'status_bar' => 'black',
         'icons' => [
             '72x72' => '/images/icons/icon-72x72.png',
             '96x96' => '/images/icons/icon-96x96.png',
