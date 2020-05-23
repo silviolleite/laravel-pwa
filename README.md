@@ -1,6 +1,8 @@
 # Laravel (PWA) Progressive Web Aplication
 
-[![Laravel 5.x](https://img.shields.io/badge/Laravel-5.x-orange.svg)](http://laravel.com)
+[![Laravel 5.x](https://img.shields.io/badge/Laravel-5.x-orange.svg)](https://laravel.com/docs/5.8)
+[![Laravel 6.x](https://img.shields.io/badge/Laravel-6.x-blue.svg)](https://laravel.com/docs/6.x)
+[![Laravel 7.x](https://img.shields.io/badge/Laravel-7.x-red.svg)](https://laravel.com)
 [![Latest Stable Version](https://poser.pugx.org/silviolleite/laravelpwa/v/stable)](https://packagist.org/packages/silviolleite/laravelpwa)
 [![Total Downloads](https://poser.pugx.org/silviolleite/laravelpwa/downloads.png)](https://packagist.org/packages/silviolleite/laravelpwa)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://packagist.org/packages//silviolleite/laravelpwa)
