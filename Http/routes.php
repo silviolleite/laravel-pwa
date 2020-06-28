@@ -2,7 +2,7 @@
 
 Route::group(['as' => 'laravelpwa.'], function()
 {
-    Route::get('/manifest.json', 'LaravelPWAController@manifestJson')
+    Route::get('/manifest', 'LaravelPWAController@manifestJson')
     ->name('manifest');
     Route::get('/offline/', 'LaravelPWAController@offline');
 });
