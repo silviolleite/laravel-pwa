@@ -49,8 +49,8 @@ class ManifestService
             }
 
             $basicManifest['shortcuts'][] = [
-                'name' => $shortcut['name'],
-                'description' => $shortcut['description'],
+                'name' => trans($shortcut['name']),
+                'description' => trans($shortcut['description']),
                 'url' => $shortcut['url'],
                 'icons' => [
                         $icon
