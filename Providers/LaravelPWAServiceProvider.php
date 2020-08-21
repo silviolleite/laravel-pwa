@@ -27,6 +27,7 @@ class LaravelPWAServiceProvider extends ServiceProvider
         $this->registerViews();
         $this->registerServiceworker();
         $this->registerDirective();
+        $this->registerCommands();
     }
 
     /**
@@ -118,7 +119,19 @@ class LaravelPWAServiceProvider extends ServiceProvider
         });
     }
 
-
+    
+    /**
+     * Register the available commands
+     *
+     * @return void
+     */
+    public function registerCommands()
+    {
+        $this->commands([
+            \LaravelPWA\Console\Commands\DeployManifest::class,
+        ]);
+        
+    }
 
     /**
      * Get the services provided by the provider.
