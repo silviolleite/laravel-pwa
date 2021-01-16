@@ -30,7 +30,7 @@ class ManifestService
             $basicManifest['icons'][] = [
                 'src' => $file['path'],
                 'type' => 'image/' . $fileInfo['extension'],
-                'sizes' => $size,
+                'sizes' => (isset($file['sizes']))?$file['sizes']:$size,
                 'purpose' => $file['purpose']
             ];
         }
