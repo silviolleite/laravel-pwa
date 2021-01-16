@@ -45,6 +45,9 @@ class ManifestService
                         'type' => 'image/' . $fileInfo['extension'],
                         'purpose' => $shortcut['icons']['purpose']
                     ];
+                    if(isset($shortcut['icons']['sizes'])) {
+                        $icon["sizes"] = $shortcut['icons']['sizes'];
+                    }
                 } else {
                     $icon = [];
                 }
