@@ -119,6 +119,15 @@ Configure your app name, description, icons and splashes  in `config/laravelpwa.
         'custom' => []
     ]
 ```
+You can specify the size of each icon as key of the array or specify it:
+```
+[
+    'path' => '/images/icons/icon-512x512.png',
+    'sizes' => '512x512',
+    'purpose' => 'any'
+],
+
+```
 Obs: In the `custom` tag you can insert personalized tags to `manifest.json` like this e.g:
 ```php
 ...
