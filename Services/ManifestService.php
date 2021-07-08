@@ -17,6 +17,7 @@ class ManifestService
             'name' => config('laravelpwa.manifest.name'),
             'short_name' => config('laravelpwa.manifest.short_name'),
             'start_url' => asset(config('laravelpwa.manifest.start_url')),
+            'scope' => asset(config('laravelpwa.manifest.scope')),
             'display' => config('laravelpwa.manifest.display'),
             'theme_color' => config('laravelpwa.manifest.theme_color'),
             'background_color' => config('laravelpwa.manifest.background_color'),
