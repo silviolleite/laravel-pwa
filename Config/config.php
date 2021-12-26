@@ -5,6 +5,7 @@ return [
     'manifest' => [
         'name' => env('APP_NAME', 'My PWA App'),
         'short_name' => 'PWA',
+        'description' => 'PWA Description',
         'start_url' => '/',
         'background_color' => '#ffffff',
         'theme_color' => '#000000',
@@ -63,7 +64,8 @@ return [
                 'description' => 'Shortcut Link 1 Description',
                 'url' => '/shortcutlink1',
                 'icons' => [
-                    "src" => "/images/icons/icon-72x72.png",
+                    "src" => "/images/icons/icon-192x192.png",
+                    "sizes" => "192x192",
                     "purpose" => "any"
                 ]
             ],
