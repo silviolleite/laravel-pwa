@@ -2,6 +2,10 @@
 
 return [
     'name' => 'LaravelPWA',
+
+    // The middleware that will be applied to the offline page and manifest.
+    'middleware' => ['web'],
+
     'manifest' => [
         'name' => env('APP_NAME', 'My PWA App'),
         'short_name' => 'PWA',
