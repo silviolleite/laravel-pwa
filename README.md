@@ -1,4 +1,4 @@
-# Laravel (PWA) Progressive Web Aplication
+# Laravel (PWA) Progressive Web Application
 
 [![Laravel 5.x](https://img.shields.io/badge/Laravel-5.x-orange.svg)](https://laravel.com/docs/5.8)
 [![Laravel 6.x](https://img.shields.io/badge/Laravel-6.x-blue.svg)](https://laravel.com/docs/6.x)
