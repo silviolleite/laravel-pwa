@@ -43,6 +43,7 @@ class ManifestService
                     $icon = [
                         'src' => $shortcut['icons']['src'],
                         'type' => 'image/' . $fileInfo['extension'],
+                        'sizes' => (isset($file['sizes']))?$file['sizes']:$size,
                         'purpose' => $shortcut['icons']['purpose']
                     ];
                     if(isset($shortcut['icons']['sizes'])) {
