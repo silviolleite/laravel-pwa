@@ -34,7 +34,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(Router $router)
     {
-        \Route::group(['middleware' => 'web', 'namespace' => $this->rootUrlNamespace], function()
+        \Route::group(['middleware' => config('laravelpwa.middleware', ['web']), 'namespace' => $this->rootUrlNamespace], function()
         {
             require __DIR__ . '/../Http/routes.php';
         });

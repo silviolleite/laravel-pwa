@@ -2,6 +2,7 @@
 
 return [
     'name' => 'LaravelPWA',
+    'middleware' => ['web'],
     'manifest' => [
         'name' => env('APP_NAME', 'My PWA App'),
         'short_name' => 'PWA',
