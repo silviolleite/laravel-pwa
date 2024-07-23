@@ -22,7 +22,11 @@ class ManifestService
             'background_color' => config('laravelpwa.manifest.background_color'),
             'orientation' =>  config('laravelpwa.manifest.orientation'),
             'status_bar' =>  config('laravelpwa.manifest.status_bar'),
-            'splash' =>  config('laravelpwa.manifest.splash')
+            'splash' =>  config('laravelpwa.manifest.splash'),
+            'description' => config('laravelpwa.manifest.description'),
+            'lang' => config('laravelpwa.manifest.lang'),
+            'scope' => config('laravelpwa.manifest.scope'),
+            'dir' => config('laravelpwa.manifest.dir')
         ];
 
         foreach (config('laravelpwa.manifest.icons') as $size => $file) {
@@ -64,9 +68,12 @@ class ManifestService
             }
         }
 
-        foreach (config('laravelpwa.manifest.custom') as $tag => $value) {
-             $basicManifest[$tag] = $value;
+        if (config('laravelpwa.manifest.custom')) {
+            foreach (config('laravelpwa.manifest.custom') as $tag => $value) {
+                $basicManifest[$tag] = $value;
+            }
         }
+        
         return $basicManifest;
     }
 
