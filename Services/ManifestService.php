@@ -16,6 +16,7 @@ class ManifestService
         $basicManifest =  [
             'name' => config('laravelpwa.manifest.name'),
             'short_name' => config('laravelpwa.manifest.short_name'),
+            'description' => config('laravelpwa.manifest.description'),
             'start_url' => asset(config('laravelpwa.manifest.start_url')),
             'display' => config('laravelpwa.manifest.display'),
             'theme_color' => config('laravelpwa.manifest.theme_color'),
@@ -38,6 +39,7 @@ class ManifestService
         if (config('laravelpwa.manifest.shortcuts')) {
             foreach (config('laravelpwa.manifest.shortcuts') as $shortcut) {
 
+                $icon = [];
                 if (array_key_exists("icons", $shortcut)) {
                     $fileInfo = pathinfo($shortcut['icons']['src']);
                     $icon = [
@@ -47,10 +49,8 @@ class ManifestService
                         'purpose' => $shortcut['icons']['purpose']
                     ];
                     if(isset($shortcut['icons']['sizes'])) {
-                        $icon["sizes"] = $shortcut['icons']['sizes'];
+                        $icon['sizes'] = $shortcut['icons']['sizes'];
                     }
-                } else {
-                    $icon = [];
                 }
 
                 $basicManifest['shortcuts'][] = [
