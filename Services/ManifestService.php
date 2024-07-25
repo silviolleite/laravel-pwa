@@ -25,7 +25,7 @@ class ManifestService
             'splash' =>  config('laravelpwa.manifest.splash')
         ];
 
-        foreach (config('laravelpwa.manifest.icons') as $size => $file) {
+        foreach (config('laravelpwa.manifest.icons', []) as $size => $file) {
             $fileInfo = pathinfo($file['path']);
             $basicManifest['icons'][] = [
                 'src' => $file['path'],
@@ -35,7 +35,7 @@ class ManifestService
             ];
         }
 
-        if (config('laravelpwa.manifest.shortcuts')) {
+        if (config('laravelpwa.manifest.shortcuts', [])) {
             foreach (config('laravelpwa.manifest.shortcuts') as $shortcut) {
 
                 if (array_key_exists("icons", $shortcut)) {
@@ -64,7 +64,7 @@ class ManifestService
             }
         }
 
-        foreach (config('laravelpwa.manifest.custom') as $tag => $value) {
+        foreach (config('laravelpwa.manifest.custom', []) as $tag => $value) {
              $basicManifest[$tag] = $value;
         }
         return $basicManifest;
