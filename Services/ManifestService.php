@@ -65,7 +65,10 @@ class ManifestService
         }
 
         foreach (config('laravelpwa.manifest.custom') as $tag => $value) {
-             $basicManifest[$tag] = $value;
+            if ($tag === 'description') {
+                $value = trans($value);
+            }
+            $basicManifest[$tag] = $value;
         }
         return $basicManifest;
     }
