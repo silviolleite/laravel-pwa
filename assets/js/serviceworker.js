@@ -1,4 +1,7 @@
-var staticCacheName = "pwa-v" + new Date().getTime();
+// Update version with every change in cached files
+const VERSION = '1.0.0';
+const staticCacheName = "pwa-v" + VERSION;
+
 var filesToCache = [
     '/offline',
     '/css/app.css',
