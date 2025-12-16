@@ -50,3 +50,4 @@ class DeployManifest extends Command
 
 
 }
+
